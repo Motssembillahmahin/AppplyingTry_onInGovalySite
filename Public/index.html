@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Garment Try-On</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Virtual Garment Try-On</h1>
+    <form id="urlForm">
+        <label for="personImageUrl">Enter Person Image URL:</label>
+        <input type="url" id="personImageUrl" name="personImageUrl" placeholder="https://example.com/person.jpg" required>
+
+        <label for="garmentImageUrl">Enter Garment Image URL:</label>
+        <input type="url" id="garmentImageUrl" name="garmentImageUrl" placeholder="https://example.com/garment.jpg">
+
+        <button type="submit">Try On</button>
+    </form>
+    <div id="result">
+        <h2>Result</h2>
+        <img id="resultImage" alt="Result will appear here">
+    </div>
+    <script defer src="scripts.js"></script>
+</body>
+</html>
